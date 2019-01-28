@@ -4,7 +4,7 @@ One has to run DB creating script in the for_starting_the_project folder to crea
 
 DB models are kept in a single file for doing it fast and easy.
 
-Feed retrieveing is done with constructing arrays from 3 different arrays:
+Feed retrieveing is done with constructing arrays with *(splats) from 3 different arrays:
 1. upvoted books
 2. followed author books
 3. other books
