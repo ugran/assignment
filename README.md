@@ -18,4 +18,4 @@ In the feedWithGenres the feed implements a method to check for user taste - whi
 
 After calculating the priorities for a user for each genre, the sorting is done with book ratings for the specific user, which is calculated according to the priorities of the user.
 
-This way, the sorting may actually take a lot of time as the database grows, and for this we may create a background job that will save (in DB) priorities ( updated in case of a new upvote) & ratings for each user for every new book.
+This way, the sorting may actually take a lot of time as the database grows, and for this we may create a background job that will save (in DB) priorities ( updated in case of a new upvote) & ratings for each user for every new book - THIS WAY SORTING SHOULD BE PRETTY FAST.
