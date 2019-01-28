@@ -14,7 +14,7 @@ So the base ordering is done with Ids` and not the published_on column.
 
 For feed refresh method one has to pass already retrieved book collection to the method and as new books can't be upvoted yet, refresh doesn't include logic for upvotes.
 
-In the feedWithGenres the feed implements a method to check for user taste - which calculates the taste of a user according to his/her upvotes.
+In the feedWithGenres.rb the feed implements a method to check for user taste - which calculates the taste of a user according to his/her upvotes.
 
 After calculating the priorities for a user for each genre, the sorting is done with book ratings for the specific user, which is calculated according to the priorities of the user.
 
