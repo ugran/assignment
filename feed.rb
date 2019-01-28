@@ -17,6 +17,6 @@ class Feed
     def refresh(already_retrieved)
       followed_author_new_books = Book.where(id: @user.authors.map(&:id)) - already_retrieved
       other_books = Book.all - followed_author_new_books - already_retrieved
-      return [*followed_author_new_books, other_books]
+      return [*followed_author_new_books, *other_books]
     end
 end
